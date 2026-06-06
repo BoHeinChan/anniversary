@@ -486,6 +486,9 @@ h2 {
 .modal-content {
   position: relative;
   width: min(520px, 100%);
+  max-height: min(82vh, 680px);
+  display: flex;
+  flex-direction: column;
   border-radius: 28px;
   padding: 38px;
   background: #fff;
@@ -494,8 +497,28 @@ h2 {
 }
 
 .modal-content p:last-child {
+  overflow-y: auto;
+  margin-bottom: 0;
+  max-height: 46vh;
+  padding: 0 10px 4px;
   color: var(--muted);
   line-height: 1.9;
+  scrollbar-color: var(--primary) #ffe8ef;
+  scrollbar-width: thin;
+}
+
+.modal-content p:last-child::-webkit-scrollbar {
+  width: 8px;
+}
+
+.modal-content p:last-child::-webkit-scrollbar-track {
+  border-radius: 999px;
+  background: #ffe8ef;
+}
+
+.modal-content p:last-child::-webkit-scrollbar-thumb {
+  border-radius: 999px;
+  background: var(--primary);
 }
 
 .close-button {
@@ -580,6 +603,19 @@ h2 {
 
   .body {
     height: 62px;
+  }
+
+  .modal {
+    padding: 14px;
+  }
+
+  .modal-content {
+    max-height: 88vh;
+    padding: 32px 20px 24px;
+  }
+
+  .modal-content p:last-child {
+    max-height: 54vh;
   }
 
   .floating-hearts span {
