@@ -1,0 +1,151 @@
+<!doctype html>
+<html lang="my">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="description"
+      content="A sweet 4-month anniversary website made with love."
+    />
+    <title>Happy 4 Months Anniversary</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+Myanmar:wght@400;600;700&family=Playfair+Display:wght@700&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <main class="page-shell">
+      <section class="hero">
+        <div class="floating-hearts" aria-hidden="true">
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <div class="mascot-couple" aria-label="Cute bear couple">
+          <div class="bear bear-bubu">
+            <div class="ear left"></div>
+            <div class="ear right"></div>
+            <div class="face">
+              <span class="eye left"></span>
+              <span class="eye right"></span>
+              <span class="blush left"></span>
+              <span class="blush right"></span>
+              <span class="nose"></span>
+              <span class="mouth"></span>
+            </div>
+            <div class="body">
+              <span class="paw left"></span>
+              <span class="paw right"></span>
+              <span class="heart-pillow">♥</span>
+            </div>
+            <p>လူကြီး</p>
+          </div>
+
+          <div class="tiny-heart" aria-hidden="true">♥</div>
+
+          <div class="bear bear-dudu">
+            <div class="ear left"></div>
+            <div class="ear right"></div>
+            <div class="face">
+              <span class="eye left"></span>
+              <span class="eye right"></span>
+              <span class="blush left"></span>
+              <span class="blush right"></span>
+              <span class="nose"></span>
+              <span class="mouth"></span>
+            </div>
+            <div class="body">
+              <span class="paw left"></span>
+              <span class="paw right"></span>
+              <span class="heart-pillow">♥</span>
+            </div>
+            <p>ကလေးလေး</p>
+          </div>
+        </div>
+
+        <p class="eyebrow">Our Little Love Story</p>
+        <h1>
+          Happy <span>4 Months</span><br />
+          Anniversary
+        </h1>
+        <p class="subtitle">
+          ချစ်ရတဲ့ <strong id="partnerName">ကလေးလေး</strong> ရေ၊
+          လူကြီးတို့နှစ်ယောက်ရဲ့ ၄ လပြည့်နေ့လေးမှာ ဒီ page လေးကို
+          အမှတ်တရအနေနဲ့ ပြုလုပ်ထားပါတယ်ဂျ
+        </p>
+
+        <div class="date-card">
+          <span>Since</span>
+          <strong id="startDateLabel">Our First Day</strong>
+        </div>
+
+        <button class="love-button" type="button" id="surpriseButton">
+          Surprise message ဖွင့်မယ်
+        </button>
+      </section>
+
+      <section class="countdown-card" aria-label="Time together">
+        <p>We have loved each other for</p>
+        <div class="timer" id="timeTogether">
+          <div><strong>0</strong><span>Days</span></div>
+          <div><strong>0</strong><span>Hours</span></div>
+          <div><strong>0</strong><span>Minutes</span></div>
+          <div><strong>0</strong><span>Seconds</span></div>
+        </div>
+      </section>
+
+      <section class="message-card">
+        <h2>ကလေးလေးအတွက် စာလေးတစ်စောင်</h2>
+        <p id="loveLetter">
+          ၄ လဆိုတာ အရမ်းမရှည်သေးပေမယ့် ကလေးလေးနဲ့အတူဖြတ်သန်းခဲ့တဲ့နေ့တိုင်းက
+          လူကြီးတို့အတွက် အလှဆုံးအမှတ်တရတွေဖြစ်ခဲ့တယ်။ ရယ်မောပေးတာ၊ နားလည်ပေးတာ၊
+          ဘေးမှာရှိပေးတာအားလုံးအတွက် ကျေးဇူးတင်ပါတယ်။ နောက်ထပ်လတွေ၊
+          နှစ်တွေမှာလည်း ကလေးလေးကို ဒီထက်ပိုချစ်ပြီး ဂရုစိုက်သွားပါမယ်။
+        </p>
+      </section>
+
+      <section class="memories">
+        <h2>လူကြီးတို့နှစ်ယောက်ရဲ့ အမှတ်တရလေးတွေ</h2>
+        <div class="memory-grid" id="memoryGrid"></div>
+      </section>
+
+      <section class="promises">
+        <h2>လူကြီးရဲ့ကတိလေးတွေ</h2>
+        <ul>
+          <li>ကလေးလေးကို နေ့တိုင်းပိုပြီး နားလည်ပေးမယ်။</li>
+          <li>ပျော်စရာနေ့တွေမှာရော ခက်ခဲတဲ့နေ့တွေမှာပါ ဘေးမှာရှိပေးမယ်။</li>
+          <li>ဒီအချစ်လေးကို တန်ဖိုးထားပြီး အမြဲဂရုစိုက်မယ်။</li>
+        </ul>
+      </section>
+    </main>
+
+    <div class="modal" id="surpriseModal" aria-hidden="true">
+      <div class="modal-content" role="dialog" aria-modal="true">
+        <button class="close-button" type="button" id="closeModal">×</button>
+        <p class="eyebrow">For You</p>
+        <h2>ကလေးလေးကို အရမ်းချစ်တယ်</h2>
+        <p>
+          လူကြီးဘဝမှာ ကလေးလေးက အဖိုးတန်လေးပါ၊ ကလေးလေးနဲ့တွေ့မှ စိတ်ချမ်းသာရတယ်၊ စိတ်လုံခြုံမှုရတယ်၊ လူကြီး စိတ်ကွယ်ရာမှာတောင်
+          လူကြီးစိတ်ချရတဲ့ လူကြီးရဲ့ ချစ်ရသူလေးရေ ကလေးလေးကို ဒီတစ်သက်မှာ ရအောင်ယူသွားမှာလို့ ပြောထားပြီးသားနော်
+          လူကြီးတို့တွေ ကြုံလာသမျှ အခက်အခဲမှန်သမျှ အတူတူရင်ဆိုင်ကျော်ဖြတ်ကြမယ်၊ ကလေးလေးမှာ လူကြီရှိ၊ လူကြီးမှာ ကလေးလေးရှိ ဟိဟိ
+<br>
+          တစ်ခါတစ်လေ လူကြီးစိတ် ဂရုဏာဒေါသနဲ့ အော်တာ၊ ငေါက်တာရှိရင် ဗွေမယူပါနဲ့လို့
+          <br>
+          ငါ့သဲနဲ့အတူဖြစ်ချင်တာတွေ အများကြီးရှိပါတယ်။
+          လူကြီးလည်းကြိုးစားမယ်၊ ကလေးလေးလည်းကြိုးစားထား၊ ကြိုးစားနေတာလည်း သိတာမို့ လာမယ့်နေ့တွေမှာ နီးမယ်ဆိုတာ ယုံကြည်ပါတယ်ဗျ၊ ကလေးလေး လုပ်ချင်တာတွေ
+          ဖြစ်ချင်တာတွေ ဖြစ်ခွင့်ပေးမယ့်၊ လုပ်ခွင့်ပေးမယ့်၊ ဖြစ်အောင် လုပ်ပေးနိုင်တဲ့ ယောကျ်ားတစ်ယောက်ဖြစ်အောင်ကြိုးစားပါ့မယ်ဗျ
+
+
+        </p>
+      </div>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
